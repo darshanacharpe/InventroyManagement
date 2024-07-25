@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Internationalization Example</title>
+</head>
+
+<body>
+	<h1 th:text="#{welcome}">welcome</h1>
+	<form action="#" th:action="@{/change-language}" method="get">
+		<!-- <input type="text" name="inputText" placeholder="Enter text here" /> -->
+		<select name="lang">
+			<option value="en">English</option>
+			<option value="fr">French</option>
+			<option value="es">Spanish</option>
+			<option value="mr">marathi</option>
+			<option value="hi">Hindi</option>
+			<option value="kn">Kannada</option>
+			<option value="ta">Tamil</option>
+			<option value="bn">bengali</option>
+		
+
+
+		</select>
+		<button type="submit">Change</button>
+	</form>
+</body>
+
+</html>
